@@ -61,6 +61,7 @@ body {
   letter-spacing: -0.02em;
   text-shadow: -1px 4px 8px rgba(255, 255, 255, 0.23);
   font-size: 1.125rem;
+  flex-shrink: 0;
 }
 
 .i-know-spots {
@@ -347,7 +348,7 @@ body {
 }
 
 .client-div {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .client-container {
@@ -374,7 +375,7 @@ body {
   color: white;
   font-size: 25px;
   font-weight: 550;
-  line-height: 0.6;
+  line-height: 1;
   margin-bottom: 60px;
 }
 
@@ -432,7 +433,7 @@ body {
   font-size: 1.125rem;
   padding: 1.25rem;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: rgb(70 70 70 / 54%);
   border-width: 1px;
   border-color: transparent;
@@ -943,30 +944,76 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
   /*   gap: 6.5rem; */
 }
 
-@media screen and (max-width: 768px) {
-  /* body * {
-    display: none;
+@media screen and (max-width: 1092px){
+  #navbar{
+    padding-top: 20px;
+    gap: 2.3rem;
   }
 
-  body::before {
-    content: "This website is not available for small screens yet. Kindly use desktop mode.";
+  .logo{
+    height: 25px;
+  }
+
+  .text{
+    line-height: 1.4;
+    font-size: 7rem;
+  }
+
+  .right-ticket-div{
+    transform: translateY(-830px);
+  }
+
+  .right-ticket{
+    height: 350px;
+  }
+
+  .left-ticket{
+    transform: translate(0, -1480px);
+  }
+
+  .front-ticket{
+    transform: translate(80px, -85px);
+    height: 350px;
+  }
+
+  .union-down{
+    transform: translate(170px, -245px);
+    height: 120px;
+  }
+
+  .union-up{
+    transform: translate(26px, -447px);
+    height: 110px;
+  }
+
+  .features-content{
+    margin: 15px 50px;
+    gap: 1.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    font-size: 18px;
-    padding: 20px;
-    font-weight: 700;
-    background-color: #140d1e;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-  } */
+  }
+
+  .features-img{
+    margin-top: 0;
+  }
+
+  .use-container{
+    border-radius: 1rem;
+  }
+
+  .use-text-head{
+    font-size: 2.5rem;
+    border-radius: 16px;
+  }
+
+  .com-btn{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
 
   #navbar{
     padding-top: 24px;
@@ -974,7 +1021,7 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
   }
 
   .logo{
-    height: 20px;
+    height: 16px;
   }
 
   .first{
@@ -982,15 +1029,22 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
   }
 
   .first li{
-    flex-shrink: 0;
-    font-size: 0.9rem;
+    /* flex-shrink: 0; */
+    font-size: 0.75rem;
   }
 
   .btn-nav{
-    height: 28px;
+    /* height: 28px;
     width: 100px;
     padding: 0 3px;
-    font-size: 0.75rem;
+    font-size: 0.75rem; */
+    display: flex;
+    height: 20px;
+    width: 90px;
+    padding: 0 3px;
+    font-size: 0.6rem;
+    align-items: center;
+    justify-content: center;
   }
 
   .img-nav{
@@ -998,7 +1052,7 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
   }
 
   .text{
-    font-size: 4.75rem;
+    font-size: 6rem;
     height: auto;
     margin-top: -650px;
   }
@@ -1015,6 +1069,7 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
 
   .box{
     height: 30px;
+    width: 27%;
   }
 
   .hero-box-text{
@@ -1022,7 +1077,7 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
   }
 
   .left-ticket{
-    transform: translateY(-1150px);
+    transform: translateY(-1260px);
   }
 
   .right-ticket-div{
@@ -1055,6 +1110,12 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
   .client-pr{
     font-size: 1.3rem;
     margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .client-container{
+    margin: 50px 35px;
+    --columns: 3;
   }
 
   .feature-h1{
@@ -1070,6 +1131,10 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
   .features-content{
     margin: 15px 50px;
     gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .features-left{
@@ -1078,6 +1143,7 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
 
   .features-left-head{
     padding-right: 0.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .features-h3{
@@ -1086,6 +1152,120 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
 
   .features-p{
     font-size: 1rem;
+  }
+
+  .features-a{
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .features-a-img{
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .features-a-svg{
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .features-img{
+    border-radius: 25px;
+    margin-top: 0px;
+    height: auto;
+  }
+
+  .use-container{
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .use-text-head{
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 0 10px;
+  }
+
+  .slide{
+    gap: 1.5rem;
+  }
+
+  .use-text{
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .com-box{
+    padding: 20px;
+    height: 200px;
+  }
+
+  .com-part{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .com-btn{
+    width: 75%;
+  }
+
+  .com-btn-a{
+    width: 75px;
+    height: 35px;
+    font-size: 1rem;
+    border-radius: 50px;
+  }
+
+  .com-btn-a:hover{
+    font-size: 1.25rem;
+    height: 40px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .text{
+    font-size: 3.5rem;
+    line-height: 1.6;
+  }
+  .left-ticket{
+    transform: translateY(-955px);
+    height: 180px;
+  }
+
+  .right-ticket-div{
+    transform: translateY(-485px);
+  }
+
+  .right-ticket{
+    height: 180px;
+  }
+
+  .front-ticket{
+    transform: translate(10px, 0px);
+    height: 220px;
+  }
+
+  .union-down{
+    transform: translate(85px, -103px);
+    height: 80px;
+  }
+
+  .union-up{
+    transform: translate(-17px, -235px);
+    height: 75px;
+  }
+
+  .gradient-05{
+    width: 200px;
+    height: 65vh;
+    left: -22%;
+    top: -33%;
+  }
+
+  .com-btn{
+    width: 100%;
   }
 }
 

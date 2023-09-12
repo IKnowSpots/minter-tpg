@@ -10,16 +10,16 @@ import UseCases from "./components/UseCases";
 export default function Home() {
   return (
     <div>
- <Navbar/>
-      <div className='gradient-05 z-0' />
+      <Navbar />
+      <div className="gradient-05 z-0" />
       <Hero />
-      <div className='gradient-06 z-0'/>
+      <div className="gradient-06 z-0" />
       <Clients />
-      <Features/>
-      <Tweets/>
-      <UseCases/>
-      <Community/>
-      <FooterNew/>
+      <Features />
+      <Tweets />
+      <UseCases />
+      <Community />
+      <FooterNew />
     </div>
-  )
+  );
 }
