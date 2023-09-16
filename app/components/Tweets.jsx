@@ -3,7 +3,7 @@ import { Tweet } from "react-tweet";
 
 const Tweets = () => {
   return (
-    <div className="flex justify-center">
+    <div className="tweet-main flex justify-center ">
       <div className="w-10/12">
         <div className="flex justify-center">
           <h1 className="feature-h1">Hear from our Community</h1>

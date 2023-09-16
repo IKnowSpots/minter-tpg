@@ -23,7 +23,7 @@ export default function Navbar() {
             <li><Link href="/">Docs</Link></li>
           </ul>
 
-          <ul className="first md:hidden h-screen w-full fixed left-[0] top-[-80px]" >
+          <ul className="first md:hidden h-screen w-full fixed z-negative left-[0] top-[-80px]" >
             <li><Link href="/">Featured Events</Link></li>
             <li><Link href="/">Inventory</Link></li>
             <li><Link href="/">Docs</Link></li>
