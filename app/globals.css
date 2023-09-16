@@ -26,7 +26,7 @@ body {
 #navbar {
   /* font-family: Inter; */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding-top: 50px;
   padding-bottom: 30px;
@@ -48,9 +48,9 @@ body {
 }
 
 .first {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   gap: 2.5rem;
 }
 
@@ -349,6 +349,9 @@ body {
 
 .client-div {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .client-container {
@@ -944,49 +947,49 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
   /*   gap: 6.5rem; */
 }
 
-@media screen and (max-width: 1092px){
-  #navbar{
+@media screen and (max-width: 1092px) {
+  #navbar {
     padding-top: 20px;
     gap: 2.3rem;
   }
 
-  .logo{
+  .logo {
     height: 25px;
   }
 
-  .text{
+  .text {
     line-height: 1.4;
     font-size: 7rem;
   }
 
-  .right-ticket-div{
+  .right-ticket-div {
     transform: translateY(-830px);
   }
 
-  .right-ticket{
+  .right-ticket {
     height: 350px;
   }
 
-  .left-ticket{
+  .left-ticket {
     transform: translate(0, -1480px);
   }
 
-  .front-ticket{
+  .front-ticket {
     transform: translate(80px, -85px);
     height: 350px;
   }
 
-  .union-down{
+  .union-down {
     transform: translate(170px, -245px);
     height: 120px;
   }
 
-  .union-up{
+  .union-up {
     transform: translate(26px, -447px);
     height: 110px;
   }
 
-  .features-content{
+  .features-content {
     margin: 15px 50px;
     gap: 1.5rem;
     display: flex;
@@ -995,135 +998,135 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
     justify-content: center;
   }
 
-  .features-img{
+  .features-img {
     margin-top: 0;
   }
 
-  .use-container{
+  .use-container {
     border-radius: 1rem;
   }
 
-  .use-text-head{
+  .use-text-head {
     font-size: 2.5rem;
     border-radius: 16px;
   }
 
-  .com-btn{
+  .com-btn {
     width: 60%;
   }
 }
 
 @media screen and (max-width: 768px) {
-
-  #navbar{
+  #navbar {
     padding-top: 24px;
-    gap: 1.5rem;
+    /* gap: 1.5rem; */
   }
 
-  .logo{
+  /* .logo {
     height: 16px;
-  }
+  } */
 
-  .first{
+  .first {
     gap: 1rem;
   }
 
-  .first li{
+  .first li {
     /* flex-shrink: 0; */
     font-size: 0.75rem;
   }
 
-  .btn-nav{
+  .btn-nav {
     /* height: 28px;
     width: 100px;
     padding: 0 3px;
     font-size: 0.75rem; */
     display: flex;
-    height: 20px;
-    width: 90px;
+    height: 30px;
+    width: 100px;
     padding: 0 3px;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     align-items: center;
     justify-content: center;
   }
 
-  .img-nav{
+  .img-nav {
     height: 17px;
   }
 
-  .text{
+  .text {
     font-size: 6rem;
     height: auto;
     margin-top: -650px;
   }
 
-  .event{
+  .event {
     margin-top: -50px;
   }
 
-  .Seamless{
+  .Seamless {
     font-size: 1.25rem;
     margin: 0 25%;
     line-height: 1.5rem;
   }
 
-  .box{
+  .box {
     height: 30px;
     width: 27%;
   }
 
-  .hero-box-text{
+  .hero-box-text {
     font-size: 0.85rem;
   }
 
-  .left-ticket{
+  .left-ticket {
     transform: translateY(-1260px);
   }
 
-  .right-ticket-div{
+  .right-ticket-div {
     transform: translateY(-650px);
   }
 
-  .right-ticket{
+  .right-ticket {
     height: 250px;
   }
 
-  .front-ticket{
+  .front-ticket {
     transform: translate(75px, -20px);
     height: 300px;
   }
 
-  .union-down{
+  .union-down {
     transform: translate(175px, -160px);
     height: 100px;
   }
 
-  .union-up{
+  .union-up {
     transform: translate(50px, -328px);
     height: 90px;
   }
 
-  .client-div{
+  .client-div {
     margin-bottom: 60px;
   }
 
-  .client-pr{
+  .client-pr {
     font-size: 1.3rem;
     margin-bottom: 30px;
     text-align: center;
+    width: 90%;
   }
 
-  .client-container{
+  .client-container {
     margin: 50px 35px;
     --columns: 3;
   }
 
-  .feature-h1{
+  .feature-h1 {
     font-size: 2.25rem;
     margin-bottom: 0.5rem;
   }
 
-  .features-pr{
+  .features-pr {
     margin: 0 10%;
     font-size: 0.9rem;
   }
@@ -1137,134 +1140,142 @@ background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%); */
     justify-content: center;
   } */
 
-  .features-left{
+  .features-left {
     margin-top: 20px;
   }
 
-  .features-left-head{
+  .features-left-head {
     padding-right: 0.5rem;
     margin-bottom: 1.5rem;
   }
 
-  .features-h3{
+  .features-h3 {
     font-size: 1.5rem;
   }
 
-  .features-p{
+  .features-p {
     font-size: 1rem;
   }
 
-  .features-a{
+  .features-a {
     font-size: 1rem;
     padding: 0.75rem;
   }
 
-  .features-a-img{
+  .features-a-img {
     height: 1.5rem;
     width: 1.5rem;
   }
 
-  .features-a-svg{
+  .features-a-svg {
     width: 0.75rem;
     height: 0.75rem;
   }
 
-  .features-img{
+  .features-img {
     border-radius: 25px;
     margin-top: 0px;
     height: auto;
   }
 
-  .use-container{
+  .use-container {
     width: 90%;
     border-radius: 10px;
   }
 
-  .use-text-head{
+  .use-text-head {
     font-size: 1.5rem;
     border-radius: 10px;
     padding: 0 10px;
   }
 
-  .slide{
+  .slide {
     gap: 1.5rem;
   }
 
-  .use-text{
+  .use-text {
     gap: 1rem;
     font-size: 0.9rem;
   }
 
-  .com-box{
+  .com-box {
     padding: 20px;
     height: 200px;
   }
 
-  .com-part{
+  .com-part {
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .com-btn{
+  .com-btn {
     width: 75%;
   }
 
-  .com-btn-a{
+  .com-btn-a {
     width: 75px;
     height: 35px;
     font-size: 1rem;
     border-radius: 50px;
   }
 
-  .com-btn-a:hover{
+  .com-btn-a:hover {
     font-size: 1.25rem;
     height: 40px;
     width: 100px;
   }
 }
 
-@media screen and (max-width: 425px){
-  .text{
+@media screen and (max-width: 425px) {
+  #navbar{
+    gap: 0.6rem;
+  }
+
+  .logo{
+    height: 20px;
+  }
+
+  .text {
     font-size: 3.5rem;
     line-height: 1.6;
   }
-  .left-ticket{
+  .left-ticket {
     transform: translateY(-955px);
     height: 180px;
   }
 
-  .right-ticket-div{
+  .right-ticket-div {
     transform: translateY(-485px);
   }
 
-  .right-ticket{
+  .right-ticket {
     height: 180px;
   }
 
-  .front-ticket{
+  .front-ticket {
     transform: translate(10px, 0px);
     height: 220px;
   }
 
-  .union-down{
+  .union-down {
     transform: translate(85px, -103px);
     height: 80px;
   }
 
-  .union-up{
+  .union-up {
     transform: translate(-17px, -235px);
     height: 75px;
   }
 
-  .gradient-05{
+  .gradient-05 {
     width: 200px;
     height: 65vh;
     left: -22%;
     top: -33%;
   }
 
-  .com-btn{
+  .com-btn {
     width: 100%;
   }
 }
