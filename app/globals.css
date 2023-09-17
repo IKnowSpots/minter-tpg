@@ -43,9 +43,9 @@ body {
   /* margin-right: 60px; */
 }
 
-#features ul {
+/* #features ul {
   list-style-type: none;
-}
+} */
 
 .first {
   /* display: flex;
@@ -182,7 +182,7 @@ body {
   letter-spacing: 0.03em;
   font-size: 24px;
   position: relative;
-  z-index: 3;
+  z-index: 1;
   /* font-weight: 600; */
   line-height: 36px;
   text-align: center;
@@ -205,7 +205,7 @@ body {
   position: relative;
   opacity: 0.96;
   border-radius: 34px;
-  z-index: 3;
+  z-index: 1;
   /* background: linear-gradient(rgba(76, 49, 130, 0.2), rgba(76, 49, 130, 0.2)), #7c5fb9; */
   background: linear-gradient(rgb(85 0 255 / 20%), rgb(255 255 255 / 20%)),
     #7a4fd5;
@@ -235,18 +235,18 @@ body {
     #7a4fd5;
   box-shadow: 20px 20px 30px rgb(0 0 0);
 }
+
 .front-ticket {
   transform: translate(100px, -115px);
   height: 400px;
   position: relative;
-  z-index: 1;
 }
 
 .img-container {
   perspective: 1000px;
   display: inline-block;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .img-container img {
@@ -407,7 +407,6 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   margin: 50px 120px;
   gap: 2.5rem;
-  z-index: 2;
   position: relative;
 }
 
@@ -496,7 +495,6 @@ body {
 
 .tweet-main{
   position: relative;
-  z-index: 2;
 }
 
 .com-main {
@@ -504,7 +502,6 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 2;
 }
 
 .com-box {
